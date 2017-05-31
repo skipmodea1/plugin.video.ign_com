@@ -325,7 +325,6 @@ def add_link(name, url, mode, iconimage, desc="", duration=""):
 
 
 def add_dir(name, url, mode, iconimage, desc=""):
-    xbmc.log("[ADDON] %s v%s (%s) debug mode, %s = %s" % (addon, version, date, "iconimage", str(iconimage)), xbmc.LOGDEBUG)
     u = sys.argv[0] + '?url=' + urllib.quote_plus(url) + '&mode=' + str(mode)
     liz = xbmcgui.ListItem(name, iconImage='DefaultFolder.png', thumbnailImage=iconimage)
     liz.setInfo(type='video', infoLabels={'title': name, 'plot': desc, 'plotoutline': desc})
