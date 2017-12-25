@@ -1,3 +1,8 @@
+v2.3.4-SNAPSHOT (2017-12-25)
+- using requests
+- addon now works in kode python 2 and also 3 (!!) thanks to the future project
+- addon.xml contains NOT YET SUPPORTED python3 tag
+
 v2.3.3 (2017-05-30) by Skipmode A1
 - I (Skipmode A1) haven taken over addon by request of Twister
 - Adjusted video detection to new page structure
