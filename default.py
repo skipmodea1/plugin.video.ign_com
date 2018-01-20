@@ -26,8 +26,8 @@ PLUGIN_HANDLE = int(sys.argv[1])
 BASE_URL = "http://www.ign.com"
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 COOKIES = {'i18n-ccpref': '15-US-www-1'}
-DATE = "2017-12-25"
-VERSION = "2.3.4-SNAPSHOT"
+DATE = "2018-01-20"
+VERSION = "2.3.4"
 
 max_video_quality = SETTINGS.getSetting("maxVideoQualityRes")
 force_view_mode = bool(SETTINGS.getSetting("force_view_mode"))
