@@ -23,10 +23,11 @@ LANGUAGE = SETTINGS.getLocalizedString
 IMAGES_PATH = os.path.join(xbmcaddon.Addon(id=ADDON).getAddonInfo('path'), 'resources', 'images')
 PLUGIN_HANDLE = int(sys.argv[1])
 BASE_URL = "http://www.ign.com"
+LATEST_VIDEOS_URL = "http://www.ign.com/videos?page=1&filter=all"
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 COOKIES = {'i18n-ccpref': '15-US-www-1'}
-DATE = "2018-01-31"
-VERSION = "2.3.5"
+DATE = "2018-02-02"
+VERSION = "2.3.6-SNAPSHOT"
 
 max_video_quality = SETTINGS.getSetting("maxVideoQualityRes")
 force_view_mode = bool(SETTINGS.getSetting("force_view_mode"))
@@ -368,13 +369,17 @@ params = parameters_string_to_dict(sys.argv[2])
 mode = params.get('mode')
 url = params.get('url')
 
+if url is None:
+    if SETTINGS.getSetting('onlyshownewvideocategory') == 'true':
+        mode = 'list_videos'
+        url = urllib.parse.quote_plus(LATEST_VIDEOS_URL)
 
 if mode == 'list_videos':
     url = urllib.parse.unquote_plus(url)
     list_videos(url)
 elif mode == 'list_series':
     url = urllib.parse.unquote_plus(url)
-    list_series(url)
+    list_videos(url)
 elif mode == 'list_search_results':
     url = urllib.parse.unquote_plus(url)
     list_search_results(url)
