@@ -13,10 +13,11 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Game and Movie trailers/reviews/news</summary>
-        <description lang="en">Game and Movie trailers/reviews/news</description>
+        <summary lang="en_GB">Game and Movie trailers/reviews/news</summary>
+            <description lang="en_GB">Game and Movie trailers/reviews/news</description>
+            <disclaimer lang="en_GB">For bugs, requests or general questions visit the IGN_COM thread on the Kodi forum.</disclaimer>
+        <language>en_GB</language>
         <platform>all</platform>
-        <language>en</language>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <forum>https://forum.kodi.tv/showthread.php?tid=327964</forum>
         <website>https://www.ign.com</website>
