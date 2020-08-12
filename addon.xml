@@ -18,7 +18,7 @@
             <disclaimer lang="en_GB">For bugs, requests or general questions visit the IGN_COM thread on the Kodi forum.</disclaimer>
         <language>en</language>
         <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <license>GPL-2.0-or-later</license>
         <forum>https://forum.kodi.tv/showthread.php?tid=327964</forum>
         <website>https://www.ign.com</website>
         <source>https://github.com/skipmodea1/plugin.video.ign_com</source>
